@@ -1,0 +1,94 @@
+:root {
+  --coral-1: #FF7F50;
+  --coral-2: #E57147;
+  --coral-3: #B35837;
+  --coral-4: #7F3F28;
+  --branco: #FFFFFF;
+  --preto: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body{
+    min-height: 100vh;
+    /* min-height: 100vh representa o tamanho da página e impede os códigos de vazarem da tela. */
+    display: flex;
+    /* display: flex torna o corpo uma caixa para organizar dentro dele. */
+    flex-direction: column;
+    /* flex-direction: column; organiza o conteúdo na VERTICAL: cabecalho/main/footer */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--preto);
+    /* color em body representa a cor do texto de todo o projeto, que pode ser sobreposto por outras classes. */
+    background:var(--branco);
+    /* background usado em body escolhe uma cor para o fundo inteiro do projeto. */
+    line-height: 1.65;
+    /* line-height define o espaçamento das linhas (1.65) é um espaçamento mais confortável para textos longos. */
+}
+
+.cabecalho-interno{
+    /* Esse é o pai do menu, aqui organiza o geral. */
+    display: flex;
+    /* display:flex é o que cria a "caixinha da familia" para organizar os filhos dentro dele. */
+    align-items: center;
+/* align-items acompanha do displai flex para organização. */
+line-height: 1;
+/* line-height define um novo espaçamento dentro dessa família. */
+}
+
+.marca{
+    display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.marca-nome{
+    display: block;
+    /* display: block obriga o elemento a ocupar toda a largura disponível ao iniciar uma nova linha. Isso meio que ajuda a empilhar. */
+}
+
+
+.marca-sub{
+    display:block;
+    margin-top: 8px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+
+.menu a{
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+
+.botao{
+    display: inline-block;
+    margin: 10px;
+    padding: 13px 22px;
+    /* Neste caso o padding é o que dá o "espaço" do botão */
+    background-color: var(--coral-1);
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    border-radius: 20px;
+    
+}
+
+
+
